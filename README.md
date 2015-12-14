@@ -10,7 +10,8 @@
 
 # webapi-mediastream
 
-Low-level wrapper for MediaStream API
+Low-level wrapper for MediaStream API 
+http://w3c.github.io/mediacapture-main/#mediastream
 
 
 If you have different needs regarding the functionality, please add a [feature request](https://github.com/alykoshin/webapi-mediastream/issues).

@@ -38,33 +38,34 @@ var WebapiMediaStream = function( stream ) {
 
   self.stream.onactive = function(evt) {
     debug.log('WebapiMediaStream.stream.onactive(): evt:', evt);
-    self.emit('active', evt);
+    self.emit('_active', evt);
   };
 
   self.stream.onaddtrack = function(evt) {
     debug.log('WebapiMediaStream.stream.onaddtrack(): evt:', evt);
-    self.emit('addtrack', evt);
+    self.emit('_addtrack', evt);
   };
 
   self.stream.onended = function(evt) {
     debug.log('WebapiMediaStream.stream.onended(): evt:', evt);
-    self.emit('ended', evt);
+    self.emit('_ended', evt);
   };
 
   self.stream.oninactive = function(evt) {
     debug.log('WebapiMediaStream.stream.oninactive(): evt:', evt);
-    self.emit('inactive', evt);
+    self.emit('_inactive', evt);
   };
 
   self.stream.onremovetrack = function(evt) {
     debug.log('WebapiMediaStream.stream.onremovetrack(): evt:', evt);
-    self.emit('removetrack', evt);
+    self.emit('_removetrack', evt);
   };
 
   // Public methods - Stream control
 
   self.stop = function() {
     debug.log('WebapiMediaStream.stop()');
+    self.emit('stop');
     stream.stop();
   };
 
