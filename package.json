@@ -1,6 +1,6 @@
 {
   "name": "webapi-mediastream",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Low-level wrapper for MediaStream API",
   "main": "app/index.js",
   "scripts": {
